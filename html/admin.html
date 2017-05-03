@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Английский проект - Панел администратора</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="logo"><img src="img/logo.jpg" alt=""></div>
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 title">
+					<div class="title">
+						<span class="title-courses">курсы английского языка</span><br>
+						<span class="title-main">"английский проект"</span><br>
+						<span class="info-portal">информационный портал</span>
+						<div class="contacts">066-764-18-15</div>
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</header>
+
+	<nav class="navbar navbar-default nav-pan">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse top-nav-bar" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navig">
+					<li><a class='out-padding'href="#">Главная <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Расписание занятий</a></li>
+					<li><a href="#">Домашнее задание</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Ссылки</a></li>
+				</ul>
+				<ul class="nav navbar-nav navig navbar-right">
+					<li><a href="#">Гость</a></li>
+					<li  style='display: ;'><a href="#"><span class="glyphicon glyphicon-envelope"><span class="badge message-count">4</span></span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Авторизация <span class="caret"></span></a>
+						<ul class="dropdown-menu reg-form">
+							<li><form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email</label>
+									<input type="email" class="form-control" id="exampleInputEmail1">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Пароль</label>
+									<input type="password" class="form-control" id="exampleInputPassword1">
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Запомнить
+									</label>
+								</div>
+								<a href="#">Забыли пароль?</a><a href="#">Регистрация</a>
+								<button type="submit" class="btn btn-default button-login">Вход</button>
+							</form></li>
+						</ul>
+					</li>
+					<li style='display: none;'><a href="#">Выход</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>	
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-3">
+					<div>
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs nav-stacked side-bar" role="tablist">
+							<li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Новости</a></li>
+							<li role="presentation"><a href="#pupils" aria-controls="pupils" role="tab" data-toggle="tab">Список учеников</a></li>
+							<li role="presentation"><a href="#feedback" aria-controls="feedback" role="tab" data-toggle="tab">Обратная связь</a></li>
+							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Новостные рассылки</a></li>
+							<li role="presentation"><a href="#shedule" aria-controls="shedule" role="tab" data-toggle="tab">Расписание занятий</a></li>
+							<li role="presentation"><a href="#homework" aria-controls="homework" role="tab" data-toggle="tab">Домашнее задание</a></li>
+							<li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">О нас</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-9 col-sm-9">					
+					<div class="box">
+						<h1><a href="#">Панель администратора</a></h1>
+						<div class="post">
+							<!-- Tab panes -->
+							<div class="tab-content">
+
+								<!--Новости-->
+								<div role="tabpanel" class="tab-pane active" id="news">
+									<h2>Новости</h2>
+									<div class="post">
+										<h3>Подзаголовок</h3>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illum consequuntur vero, iure soluta nobis cupiditate error laborum velit enim dolores tempora nemo repellat, delectus voluptates cum eos sint ratione.</div>
+										<div>Iste adipisci obcaecati, voluptatem. Tenetur quae, adipisci deserunt? Illo cupiditate dicta, dolor fugit libero ipsum explicabo earum soluta voluptates pariatur alias amet, nostrum perferendis obcaecati veritatis ipsa aliquid quos facere?</div>
+										<div>Labore qui est voluptate iure odit nulla tempora sunt itaque quaerat assumenda veniam error velit corporis, voluptatum molestiae. Temporibus non repellat, vel recusandae dolores nihil ratione perspiciatis mollitia similique soluta.</div>
+										<button type="button" class="button button-delete">Удалить</button>
+										<button class="button button-news">Редактировать</button>
+										
+									</div>
+									<div class="post">
+										<h3>Подзаголовок</h3>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illum consequuntur vero, iure soluta nobis cupiditate error laborum velit enim dolores tempora nemo repellat, delectus voluptates cum eos sint ratione.</div>
+										<div>Iste adipisci obcaecati, voluptatem. Tenetur quae, adipisci deserunt? Illo cupiditate dicta, dolor fugit libero ipsum explicabo earum soluta voluptates pariatur alias amet, nostrum perferendis obcaecati veritatis ipsa aliquid quos facere?</div>
+										<div>Labore qui est voluptate iure odit nulla tempora sunt itaque quaerat assumenda veniam error velit corporis, voluptatum molestiae. Temporibus non repellat, vel recusandae dolores nihil ratione perspiciatis mollitia similique soluta.</div>
+										<button type="button" class="button button-delete">Удалить</button>
+										<button class="button button-news">Редактировать</button>
+									</div>
+									<div class="post">
+										<h3>Подзаголовок</h3>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illum consequuntur vero, iure soluta nobis cupiditate error laborum velit enim dolores tempora nemo repellat, delectus voluptates cum eos sint ratione.</div>
+										<div>Iste adipisci obcaecati, voluptatem. Tenetur quae, adipisci deserunt? Illo cupiditate dicta, dolor fugit libero ipsum explicabo earum soluta voluptates pariatur alias amet, nostrum perferendis obcaecati veritatis ipsa aliquid quos facere?</div>
+										<div>Labore qui est voluptate iure odit nulla tempora sunt itaque quaerat assumenda veniam error velit corporis, voluptatum molestiae. Temporibus non repellat, vel recusandae dolores nihil ratione perspiciatis mollitia similique soluta.</div>
+										<button type="button" class="button button-delete">Удалить</button>
+										<button class="button button-news">Редактировать</button>
+									</div>
+									<form>
+										<div class="form-group">
+											<label >Заголовок</label>
+											<input type="text" class="form-control" placeholder="Заголовок">
+										</div>
+										<div class="form-group">
+											<label>Текст</label>
+											<textarea class="form-control" rows="6"></textarea>
+										</div>
+										<button type="button" class="button button-delete">Удалить</button>
+										<button type="button" class="button button-feedback">Добавить новость</button>
+										<button type="submit" class="button button-feedback">Сохранить</button>
+									</form>	
+								</div>
+
+								<!--Расписание занятий-->
+								<div role="tabpanel" class="tab-pane" id="shedule">
+									<h2>Расписание занятий</h2>
+									<div class="post">
+										<div class="table-responsive">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>№ группы</th>
+														<th>Понедельник</th>
+														<th>Вторник</th>
+														<th>Среда</th>
+														<th>Четверг</th>
+														<th>Пятница</th>
+														<th>Суббота</th>
+														<th>Восскресение</th>
+													</tr>
+												</thead>
+												<tbody><tr>
+													<td>Рт-142</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td><button class="button">Редактировать</button></td>
+												</tr>
+												<tr>
+													<td>Рт-142</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td><button class="button">Редактировать</button></td>
+												</tr>
+												<tr>
+													<td>Рт-142</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td><button class="button">Редактировать</button></td>
+												</tr>
+												<tr>
+													<td>Рт-142</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td><button class="button">Редактировать</button></td>
+												</tr>
+												<tr>
+													<td>Рт-142</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td>С 8:30 по 10:00</td>
+													<td><button class="button">Редактировать</button></td>
+												</tr></tbody>
+											</table>
+										</div> 
+
+										<form>
+											<h3>РТ-142</h3>
+											<div class="form-group">
+												<label for="monday">Понедельник</label>
+												<input type="text" class="form-control" value='Понедельник'>
+											</div>
+											<div class="form-group">
+												<label for="tuesday">Вторник</label>
+												<input type="text" class="form-control" value="Вторник">
+											</div>
+											<div class="form-group">
+												<label for="wednesday">Среда</label>
+												<input type="text" class="form-control" value="Среда">
+											</div>
+											<div class="form-group">
+												<label for="thursday">Четверг</label>
+												<input type="text" class="form-control"  value="Четверг">
+											</div>
+											<div class="form-group">
+												<label for="friday">Пятница</label>
+												<input type="text" class="form-control" value="Пятница" >
+											</div>
+											<div class="form-group">
+												<label for="saturday">Суббота</label>
+												<input type="text" class="form-control" value="Суббота" >
+											</div>											
+											<div class="form-group">
+												<label for="sunday">Восскресение</label>
+												<input type="text" class="form-control" value="Восскресение" >
+											</div>
+										</form>
+										<button class="button button-feedback">Сохранить</button>
+									</div>
+								</div>
+
+								<!--Домашнее задание-->
+								<div role="tabpanel" class="tab-pane" id="homework">
+									<h2>Домашнее задание</h2>
+									<div class="table-responsive">
+										<h3>21.07 - 28.07</h3>
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>№ группы</th>
+													<th>Понедельник</th>
+													<th>Вторник</th>
+													<th>Среда</th>
+													<th>Четверг</th>
+													<th>Пятница</th>
+													<th>Суббота</th>
+													<th>Восскресение</th>
+												</tr>
+											</thead>
+											<tbody><tr>
+												<td>Рт-142</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td><button class="button">Редактировать</button></td>
+											</tr>
+											<tr>
+												<td>Рт-142</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td><button class="button">Редактировать</button></td>
+											</tr>
+											<tr>
+												<td>Рт-142</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td><button class="button">Редактировать</button></td>
+											</tr>
+											<tr>
+												<td>Рт-142</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td><button class="button">Редактировать</button></td>
+											</tr>
+											<tr>
+												<td>Рт-142</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td>Выучить слова</td>
+												<td><button class="button">Редактировать</button></td>
+											</tr></tbody>
+										</table>
+									</div>
+
+									<form>
+										<h3>РТ-142</h3>
+										<div class="form-group">
+											<label for="monday">Понедельник</label>
+											<input type="text" class="form-control" value='Понедельник'>
+										</div>
+										<div class="form-group">
+											<label for="tuesday">Вторник</label>
+											<input type="text" class="form-control" value="Вторник">
+										</div>
+										<div class="form-group">
+											<label for="wednesday">Среда</label>
+											<input type="text" class="form-control" value="Среда">
+										</div>
+										<div class="form-group">
+											<label for="thursday">Четверг</label>
+											<input type="text" class="form-control"  value="Четверг">
+										</div>
+										<div class="form-group">
+											<label for="friday">Пятница</label>
+											<input type="text" class="form-control" value="Пятница" >
+										</div>
+										<div class="form-group">
+											<label for="saturday">Суббота</label>
+											<input type="text" class="form-control" value="Суббота" >
+										</div>											
+										<div class="form-group">
+											<label for="sunday">Восскресение</label>
+											<input type="text" class="form-control" value="Восскресение" >
+										</div>
+										<button class="button button-feedback">Сохранить</button>
+									</form>
+								</div>
+								
+								<!--О нас-->
+								<div role="tabpanel" class="tab-pane" id="about">
+									<h2>О нас</h2>
+									<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto officiis fuga, perferendis debitis odio. Aut delectus quisquam cum et quod dicta sed dignissimos sapiente officiis odit. Voluptatibus hic reiciendis non.</div>
+									<div>Iusto molestiae vel accusantium praesentium placeat perspiciatis qui eum minima cupiditate repudiandae vitae obcaecati laborum esse soluta eveniet, odio error reiciendis aut numquam dolor eligendi recusandae. Quasi nesciunt, necessitatibus tenetur!</div>
+									<div>Officiis dignissimos recusandae inventore itaque labore numquam molestias nisi minima sunt fuga non delectus, quaerat quas est saepe voluptas esse, ex alias distinctio eligendi? Laboriosam et, totam fuga quos cupiditate.</div>
+									<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga unde laboriosam, maiores at? Illum, magni quos totam amet sapiente eius animi, placeat quasi saepe ratione, iure. Asperiores architecto est laboriosam!</div>
+									<div>Incidunt illum sunt, fugit! Deserunt necessitatibus, ipsa, reprehenderit aut eos vel qui numquam sequi nesciunt nisi inventore eaque nobis veniam tempore accusantium ullam facilis totam dolorum. Natus aut, consequuntur doloremque!</div>
+									<div>Similique quidem nisi autem, enim totam delectus cum voluptas minima quasi rem architecto sed mollitia, animi molestiae rerum, veniam ducimus cupiditate earum necessitatibus doloremque illum quibusdam dolore nihil magni! Magnam!</div>
+									<div>Officia reprehenderit molestiae obcaecati voluptatem ipsam nemo laudantium praesentium totam ex laborum natus, architecto autem eaque iusto et delectus minus aperiam perspiciatis, a, fugit excepturi sequi! Perspiciatis vero soluta illo!</div>
+									<div>Unde facilis perferendis velit praesentium, ab placeat, veritatis porro id consequatur illum officiis. Dolorum cupiditate similique quos possimus harum ut, ad doloremque itaque magni error tempora iure illo nostrum illum.</div>
+									<div>Molestias in sequi tenetur quisquam alias ipsam doloremque eius, impedit consequatur perspiciatis veniam ab, autem architecto exercitationem laboriosam fugit iure provident ducimus voluptatum fuga optio? Perspiciatis veritatis odio placeat incidunt.</div>
+									<div>Doloremque magnam quibusdam perferendis libero dolorem repellendus officia suscipit ipsa, asperiores delectus voluptas quod molestias voluptate nobis consequuntur, commodi minus aliquid esse? Possimus doloribus, adipisci id at architecto animi distinctio.</div>
+									<div>Iste saepe harum tenetur sequi? Esse ad officia quia voluptates, necessitatibus incidunt vitae, labore fugiat debitis obcaecati praesentium sequi, minima eaque, similique tenetur. Placeat suscipit, accusantium unde ipsa ex, sequi.</div>
+									<div>Nesciunt dolorum, inventore voluptas voluptatum obcaecati possimus dolores. Ipsum assumenda fugiat autem quae fuga dignissimos! Nulla, harum, totam. Natus velit eveniet distinctio corporis. Ducimus dolor debitis animi dicta facilis. Odio!</div>
+									<div>Similique doloribus assumenda aut odit dolorum maxime officia placeat quasi, est laborum quae? Deleniti nesciunt, iste voluptatem ipsum expedita numquam libero officia eligendi necessitatibus. Consequatur totam quas eaque earum cupiditate.</div>
+									<div class="row about-images">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder"><img src="#" class="img-responsive" alt="Responsive image"></div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder"><img src="#" class="img-responsive" alt="Responsive image"></div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder"><img src="#" class="img-responsive" alt="Responsive image"></div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder"><img src="#" class="img-responsive" alt="Responsive image"></div>
+									</div>
+									<button class="button button-news">Редактировать</button>
+									<form>
+										<div class="form-group">
+											<label for="">Текст</label>
+											<textarea class="form-control" rows="5"></textarea>
+										</div>
+										<div class="small-images">
+											<div class="row">
+												<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder">
+													<img src="img/logo.jpg" class="img-responsive " alt="Responsive image">
+													<span class="glyphicon glyphicon-remove delete-something"></span>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder">
+													<img src="img/logo.jpg" class="img-responsive" alt="Responsive image">
+													<span class="glyphicon glyphicon-remove delete-something"></span>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder">
+													<img src="img/logo.jpg" class="img-responsive " alt="Responsive image">
+													<span class="glyphicon glyphicon-remove delete-something"></span>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padder">
+													<img src="img/logo.jpg" class="img-responsive" alt="Responsive image">
+													<span class="glyphicon glyphicon-remove delete-something"></span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<input type="file" id="inputImage">
+											<div class="image-preview">
+												<img src="#" class="img-responsive" alt="Responsive image">
+											</div>
+										</div>
+										<button class="button">Сохранить</button>
+									</form>
+								</div>								
+								
+								<!--Обратная связь-->
+								<div role="tabpanel" class="tab-pane" id="feedback">
+									<h2>Обратная связь</h2>
+									<div class="feed-message">
+										<h3>Петров Петр Петрович</h3>
+										<p>12:12 27-09-2016</p>
+										<p>
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sapiente deserunt iste saepe harum atque numquam doloribus eos, quasi, nam necessitatibus illo nulla exercitationem ea rerum mollitia earum cumque aut.</span>
+											<span>Cum rerum doloribus expedita. Nobis corporis accusantium, minima possimus rerum vitae mollitia repellat enim, amet in quas aut voluptatum! Dolores corrupti pariatur, neque nemo. Hic accusamus enim, nisi aliquid doloribus?</span>
+											<span>Numquam tempora dolore ad tenetur harum sit illum, accusamus eum libero impedit molestias quisquam quaerat fugiat ratione vitae ut eos fugit odit perspiciatis voluptas quos doloribus exercitationem totam. Voluptatibus, esse.</span>
+											<span>Aperiam dolorem cum hic dicta incidunt veniam aut pariatur libero vero ut rerum recusandae nemo aliquam, earum dignissimos tempore distinctio placeat commodi nihil illo minus expedita! Libero odit, qui quae.</span>
+										</p>
+										<button class="button">Перейти к диалогу</button>
+										<button class="button button-delete">Удалить диалог</button>
+									</div>
+									<div class="feed-dialog">
+										<h3>Шевчук Константин Михайлович</h3>
+										<p>12:12 27-09-2016</p>
+										<p>
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sapiente deserunt iste saepe harum atque numquam doloribus eos, quasi, nam necessitatibus illo nulla exercitationem ea rerum mollitia earum cumque aut.</span>
+											<span>Cum rerum doloribus expedita. Nobis corporis accusantium, minima possimus rerum vitae mollitia repellat enim, amet in quas aut voluptatum! Dolores corrupti pariatur, neque nemo. Hic accusamus enim, nisi aliquid doloribus?</span>
+											<span>Numquam tempora dolore ad tenetur harum sit illum, accusamus eum libero impedit molestias quisquam quaerat fugiat ratione vitae ut eos fugit odit perspiciatis voluptas quos doloribus exercitationem totam. Voluptatibus, esse.</span>
+											<span>Aperiam dolorem cum hic dicta incidunt veniam aut pariatur libero vero ut rerum recusandae nemo aliquam, earum dignissimos tempore distinctio placeat commodi nihil illo minus expedita! Libero odit, qui quae.</span>
+										</p>
+										<h3>Петров Петр Петрович</h3>
+										<p>12:12 27-09-2016</p>
+										<p>
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sapiente deserunt iste saepe harum atque numquam doloribus eos, quasi, nam necessitatibus illo nulla exercitationem ea rerum mollitia earum cumque aut.</span>
+											<span>Cum rerum doloribus expedita. Nobis corporis accusantium, minima possimus rerum vitae mollitia repellat enim, amet in quas aut voluptatum! Dolores corrupti pariatur, neque nemo. Hic accusamus enim, nisi aliquid doloribus?</span>
+											<span>Numquam tempora dolore ad tenetur harum sit illum, accusamus eum libero impedit molestias quisquam quaerat fugiat ratione vitae ut eos fugit odit perspiciatis voluptas quos doloribus exercitationem totam. Voluptatibus, esse.</span>
+											<span>Aperiam dolorem cum hic dicta incidunt veniam aut pariatur libero vero ut rerum recusandae nemo aliquam, earum dignissimos tempore distinctio placeat commodi nihil illo minus expedita! Libero odit, qui quae.</span>
+										</p>
+										<textarea class="form-control" rows="4" placeholder="Сообщение"></textarea>
+										<button class="button button-feedback">Отправить</button>
+										<div class="left-buttons">
+											<button class="button">Вернуться к диалогам</button>
+											<button class="button button-delete">Удалить диалог</button>
+										</div>
+
+									</div>									
+								</div>
+
+								<!--Новостная рассылка-->								
+								<div role="tabpanel" class="tab-pane" id="messages">
+									<h2>Новостные рассылки</h2>
+									
+									<div class="table-responsive">
+										<h3>Список групп</h3>
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+													<th>РТ-142</th>
+												</tr>
+											</thead>
+											<tbody><tr>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+												<td>Петров Петя</td>
+											</tr>
+											<tr>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+												<td>Михайлов Данил</td>
+											</tr>
+											<tr>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+												<td>Григоренко Ира</td>
+											</tr>
+											<tr>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+												<td>Кузнецова Аня</td>
+											</tr>
+											<tr>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+												<td>Крейнис Ренчик</td>
+											</tr></tbody>
+										</table>
+									</div>
+
+									<form>
+										<div class="form-group">
+											<label for="news-mes-title">Получатели:</label>
+											<p>
+												<span>Крейнис Ренчик <span class="glyphicon glyphicon-remove"></span>, </span> 
+												<span>Петров Петя <span class="glyphicon glyphicon-remove"></span>, </span>
+												<span>Иванов Иван <span class="glyphicon glyphicon-remove"></span></span>
+											</p>
+										</div>
+										<div class="form-group">
+											<label for="news-mes-title">Заголовок:</label>
+											<input type="text" class="form-control" id="news-mes-title" placeholder="Заголовок">
+										</div>
+										<div class="form-group">
+											<label for="news-mes-body">Сообщение:</label>
+											<textarea type="text" class="form-control" id="news-mes-body" placeholder="Сообщение" rows="5"></textarea> 
+										</div>
+										
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Рассылка по e-Mail
+											</label>
+										</div>
+										<button type="button" class="btn btn-default button button-news">Отправить</button>
+									</form>
+								</div>	
+								
+								<!--Список учеников-->							
+								<div role="tabpanel" class="tab-pane" id="pupils">
+									<h2>Список учеников</h2>
+									<div class="table-responsive">
+										<div class="group">
+											<h3>Группа РТ-142</h3>
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>№ по списку</th>
+														<th>ФИО</th>
+														<th>Дата рождения</th>
+														<th>Оценка за четверть</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+														<td><button class="button">Редактировать</button></td>
+													</tr>
+												</tbody>
+											</table>
+											<button class="button button-news">Добавить</button>
+										</div>
+										
+										<div class="group">
+											<h3>Группа РТ-142</h3>
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>№ по списку</th>
+														<th>ФИО</th>
+														<th>Дата рождения</th>
+														<th>Оценка за четверть</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+												</tbody>
+											</table>
+											<button class="button button-news">Редактировать</button>
+										</div>
+
+										<div class="group">
+											<h3>Группа РТ-142</h3>
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>№ по списку</th>
+														<th>ФИО</th>
+														<th>Дата рождения</th>
+														<th>Оценка за четверть</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+													<tr>
+														<td>123</td>
+														<td>Петров Петя Петрович</td>
+														<td>12-09-97</td>
+														<td>12</td>
+													</tr>
+												</tbody>
+											</table>
+											<button class="button button-news">Редактировать</button>
+										</div>
+									</div>
+									<div class="edit-pupil">	
+										<form>
+											<div class="form-group">
+												<label for="pupil_surname">Фамилия</label>
+												<input type="text" class="form-control" id="pupil_surname" placeholder="Фамилия">
+											</div>
+											<div class="form-group">
+												<label for="pupil_name">Имя</label>
+												<input type="text" class="form-control" id="pupil_name" placeholder="Имя">
+											</div>
+											<div class="form-group">
+												<label for="patronymic">Отчество</label>
+												<input type="text" class="form-control" id="patronymic" placeholder="Отчество">
+											</div>												
+											<div class="form-group">
+												<label for="dateOfBirth">Дата рождения</label>
+												<input type="url" class="form-control" id="dateOfBirth" placeholder="Дата рождения">
+											</div>											
+											<div class="form-group">
+												<label for="markForQuater">Оценка за четверть</label>
+												<input type="text" class="form-control" id="markForQuater" placeholder="Оценка за четверть">
+											</div>
+
+											<button type="submit" class="button button-feedback">Сохранить</button>
+											<button type="cancel" class="button-delete">Отмена</button>
+											<button type="cancel" class="button-delete">Удалить</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Информационный портал</p>
+	</footer>
+</body>
+</html>
